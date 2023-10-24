@@ -100,10 +100,9 @@ async function displayDataInHTML(data) {
             link.classList.add("link")
             link.target = "blank"
             itemContainer.appendChild(link)
-            
-            //  <div> 要素をリストアイテムに追加
-            li.appendChild(itemContainer);
 
+            // リストアイテムをリストに追加
+            li.appendChild(itemContainer);
             // リストアイテムをリストに追加
             ul.appendChild(li);
         }
@@ -135,4 +134,5 @@ async function displayDataInHTML(data) {
         }
     });
 }
-// HTML生成関数ここまで
+
+
