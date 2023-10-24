@@ -1,0 +1,7 @@
+apikey = d553319d2ce8175b
+
+url
+http://webservice.recruit.co.jp/hotpepper/gourmet/v1/
+
+/?key=[APIキー]&large_area=Z011
+
