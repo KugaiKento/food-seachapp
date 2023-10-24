@@ -16,7 +16,7 @@
 使い方:
 
 
-まだデプロイされていないため、Node.jsが必要です。Node.jsは公式ウェブサイト（https://nodejs.org/ja）から推奨版をダウンロードしてください。
+まだデプロイされていないため、Node.jsが必要です。お手数をおかけしますが、Node.jsは公式ウェブサイト（https://nodejs.org/ja）から推奨版をダウンロードしてください。
 GitHubからファイルをダウンロードし、開いた後、server.js内の「const apiKey = "d553319d2ce8175b";」を自分のメールに添付したAPIキーに変更してください。
 コマンドラインで npm install を実行し、その後 npm run dev を実行します。これにより、コンソールに「サーバーがポート3000で実行中です」と表示されます。
 Visual Studio Codeの拡張機能であるLive Serverをインストールし、右下の「Go Live」をクリックするとブラウザでサイトが表示されます。
