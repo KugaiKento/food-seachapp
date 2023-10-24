@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>周辺のレストラン検索アプリ</title>
+</head>
+<body>
+    <div class="header-container">
+        <h1>周辺レストラン検索アプリ</h1>
+        <form id="search-form">
+            <label for="range">検索範囲:</label>
+            <select id="range" name="range">
+                <option value="1">300m</option>
+                <option value="2">500m</option>
+                <option value="3" selected>1000m</option>
+                <option value="4">2000m</option>
+                <option value="5">3000m</option>
+            </select>
+            
+            <label for="count">検索数:</label>
+            <input type="number" id="count" name="count" min="1" max="100" value="10">
+            <button type="button" onclick="searchLocation()" class="submit-btn button-60">検索</button>
+            <div id="pagination">
+                <button id="prevPage">前へ</button>
+                <span id="pages">ページ0/0</span>
+                <button id="nextPage">次へ</button>
+            </div>
+        </form>
+    </div>
+    <div id="result-container"></div>
+  
+    
+    <a href="http://webservice.recruit.co.jp/" class="logo"><img src="http://webservice.recruit.co.jp/banner/hotpepper-s.gif" alt="ホットペッパー Webサービス" width="135" height="17" border="0" title="ホットペッパー Webサービス"></a>
+    <script src="script.js"></script>
+</body>
+</html>
