@@ -16,7 +16,7 @@ app.post("/", async (req, res) => {
     const { latitude, longitude, range, count } = req.body;
     console.log("受け取った位置情報 - 緯度:", latitude, "経度:", longitude);
 
-    const apiKey = "apiキーを入れてください";
+    const apiKey = process.env.API_KEY;
 
     // グルメサーチAPIからjsonを取得
     const apiUrl = `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${apiKey}&lat=${latitude}&lng=${longitude}&range=${range}&count=${count}&format=json`;
